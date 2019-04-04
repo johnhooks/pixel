@@ -1,0 +1,14 @@
+body {
+  background-color: #222;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+#main {
+
+  display: block;
+  margin: 40px auto 0 auto;
+}
+

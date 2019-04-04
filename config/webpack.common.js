@@ -1,12 +1,13 @@
-// webpack.config.js
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+// webpack.common.js
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+const ouputPath = path.join(__dirname, "/../docs");
 
 module.exports = {
   output: {
-    path: path.resolve(__dirname, "docs")
+    path: ouputPath
   },
-  devtool: "inline-source-map",
   resolve: {
     extensions: [".ts", ".tsx", ".js"]
   },
@@ -21,10 +22,6 @@ module.exports = {
             presets: ["@babel/preset-env"]
           }
         }
-      },
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
       },
       {
         test: /\.tsx?$/,
