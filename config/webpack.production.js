@@ -6,10 +6,13 @@ const common = require("./webpack.common.js");
 
 module.exports = merge(common, {
   mode: "production",
+  output: {
+    filename: "[name].[contenthash].js"
+  },
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: "[name].css"
+      filename: "[name].[contenthash].css"
     })
   ],
   module: {
