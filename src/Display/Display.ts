@@ -17,8 +17,8 @@ export default class Display {
   constructor(
     readonly rowCount = 15,
     readonly colCount = 3,
-    readonly size = 28,
-    readonly fps = 30
+    readonly fps = 30,
+    readonly size = 28
   ) {
     this.el = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 
