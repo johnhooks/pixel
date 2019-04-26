@@ -49,6 +49,10 @@ export default class Color {
     return new Color(this.r, this.g, this.b);
   }
 
+  stringify(): string {
+    return `rgb(${this.r},${this.g},${this.b})`;
+  }
+
   private each(fn: (byte: number) => void) {
     const bytes = ["r", "g", "b"];
     for (let i = 0, len = bytes.length; i < len; i++) {

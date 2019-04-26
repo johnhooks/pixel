@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "rxjs": "^6.4.0",
-    "save": "^2.3.3"
+    "save": "^2.3.3",
+    "snabbdom": "^0.7.3"
   }
 }
